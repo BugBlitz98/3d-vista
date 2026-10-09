@@ -1,1 +1,336 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - ModelVista 3D Model Viewer</title>
+  <meta name="description" content="Privacy Policy for ModelVista (3D Model Viewer for iOS & iPadOS). Learn how your data is handled on-device with zero remote data collection.">
+  <meta name="theme-color" content="#0a0f14">
+  <style>
+    :root {
+      --bg: #090e13;
+      --card-bg: rgba(18, 26, 36, 0.72);
+      --card-border: rgba(255, 255, 255, 0.12);
+      --card-glow: rgba(0, 229, 255, 0.12);
+      --accent-cyan: #00e5ff;
+      --accent-mint: #00f2aa;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --badge-bg: rgba(0, 229, 255, 0.12);
+      --badge-border: rgba(0, 229, 255, 0.32);
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      background-image: 
+        radial-gradient(at 10% 10%, rgba(0, 229, 255, 0.15) 0px, transparent 50%),
+        radial-gradient(at 90% 20%, rgba(0, 242, 170, 0.12) 0px, transparent 45%),
+        radial-gradient(at 50% 90%, rgba(255, 184, 0, 0.08) 0px, transparent 55%);
+      background-attachment: fixed;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text-main);
+      line-height: 1.65;
+      padding: 40px 20px 80px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .app-icon {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 18px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, rgba(0, 229, 255, 0.25), rgba(0, 242, 170, 0.25));
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 12px 30px rgba(0, 229, 255, 0.2);
+    }
+
+    .app-icon svg {
+      width: 38px;
+      height: 38px;
+      fill: none;
+      stroke: #00e5ff;
+      stroke-width: 2;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 4px 14px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent-cyan);
+      background: var(--badge-bg);
+      border: 1px solid var(--badge-border);
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 2.35rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, #ffffff 40%, var(--accent-cyan) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .effective-date {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .highlight-card {
+      background: linear-gradient(135deg, rgba(0, 229, 255, 0.08), rgba(0, 242, 170, 0.05));
+      border: 1px solid rgba(0, 229, 255, 0.28);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 32px;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    .highlight-card h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--accent-cyan);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .highlight-card p {
+      color: var(--text-main);
+      font-size: 0.98rem;
+    }
+
+    .section-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      padding: 28px;
+      margin-bottom: 24px;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .section-card:hover {
+      border-color: rgba(0, 229, 255, 0.25);
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 14px;
+      letter-spacing: -0.015em;
+    }
+
+    p {
+      color: var(--text-muted);
+      font-size: 0.96rem;
+      margin-bottom: 12px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      list-style: none;
+      margin: 12px 0;
+      padding-left: 0;
+    }
+
+    li {
+      position: relative;
+      padding-left: 26px;
+      margin-bottom: 10px;
+      font-size: 0.94rem;
+      color: var(--text-muted);
+    }
+
+    li::before {
+      content: "";
+      position: absolute;
+      left: 6px;
+      top: 10px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent-cyan);
+      box-shadow: 0 0 8px var(--accent-cyan);
+    }
+
+    strong {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .contact-box {
+      background: rgba(0, 0, 0, 0.28);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-top: 14px;
+      font-size: 0.92rem;
+    }
+
+    .contact-box a {
+      color: var(--accent-cyan);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 56px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--text-dim);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 24px 16px 60px;
+      }
+
+      h1 {
+        font-size: 1.85rem;
+      }
+
+      .section-card {
+        padding: 20px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="app-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+          <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+          <line x1="12" y1="22.08" x2="12" y2="12"></line>
+        </svg>
+      </div>
+      <div class="badge">Privacy First</div>
+      <h1>ModelVista Privacy Policy</h1>
+      <p class="effective-date">Last Updated: October 9, 2026</p>
+    </header>
+
+    <div class="highlight-card">
+      <h2>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+        </svg>
+        Our Zero-Collection Commitment
+      </h2>
+      <p>
+        <strong>ModelVista ("3D Model Viewer") does not collect, transmit, store, or sell any of your personal data.</strong> All 3D rendering, mesh analysis, and video exports take place exclusively on your device using Apple Metal and SceneKit technology.
+      </p>
+    </div>
+
+    <section class="section-card">
+      <h2>1. Information We Do NOT Collect</h2>
+      <p>We respect your right to confidentiality. When using ModelVista:</p>
+      <ul>
+        <li><strong>No Personal Identification:</strong> We do not ask for or collect names, email addresses, phone numbers, or passwords.</li>
+        <li><strong>No Accounts or Login:</strong> You can launch and use the app immediately without creating an account.</li>
+        <li><strong>No Device Fingerprinting:</strong> We do not track Advertising Identifiers (IDFA), Vendor IDs, or location data.</li>
+        <li><strong>No Analytics or Telemetry:</strong> No analytics SDKs, session recording, or usage monitoring frameworks are embedded in the app.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>2. On-Device File Access & Processing</h2>
+      <p>
+        ModelVista allows you to inspect 3D models across various formats, including <strong>USDZ, GLB, GLTF, OBJ, STL, PLY, and DAE</strong>.
+      </p>
+      <ul>
+        <li><strong>Sandboxed Document Access:</strong> When you open a 3D model using the system file picker, access is strictly handled through iOS/iPadOS secure app sandboxing.</li>
+        <li><strong>Local Memory Only:</strong> Your 3D models are parsed and rendered in device memory. Files never leave your device and are never uploaded to any remote server or cloud service.</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>3. Device Permissions & Usage</h2>
+      <p>ModelVista requests minimal system permissions strictly for user-initiated actions:</p>
+      <ul>
+        <li>
+          <strong>Add Photos / Photo Library (<code>NSPhotoLibraryAddUsageDescription</code>):</strong>
+          When you tap the <em>Export MP4</em> button to create a cinematic 60 FPS turntable video of your 3D model, the app requests permission to save the generated video directly into your Photos app.
+          <br><em>Note:</em> The app only requests <strong>write-only</strong> permission to save the video you explicitly exported. It does not read, inspect, or upload any existing photos or videos in your library.
+        </li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>4. Third-Party Services & Advertising</h2>
+      <p>
+        ModelVista contains <strong>zero third-party advertisements</strong> and integrates no third-party tracking, profiling, or data brokerage tools. We do not participate in any ad exchange networks.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>5. Children’s Privacy (COPPA Compliance)</h2>
+      <p>
+        Because ModelVista does not collect any personally identifiable information from any user, it is fully compliant with the Children’s Online Privacy Protection Act (COPPA) and equivalent international regulations. We do not knowingly solicit or collect data from children under the age of 13.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>6. Changes to This Privacy Policy</h2>
+      <p>
+        We may occasionally update this Privacy Policy to reflect future software updates or changes in legal requirements. Any modifications will be posted here with an updated "Last Updated" date.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>7. Contact Us</h2>
+      <p>If you have any questions, feedback, or concerns regarding your privacy while using ModelVista, please contact us:</p>
+      <div class="contact-box">
+        <strong>Email:</strong> <a href="mailto:bugblitz.dev@gmail.com">bugblitz.dev@gmail.com</a><br>
+        <strong>Developer:</strong> ModelVista Team
+      </div>
+    </section>
+
+    <footer>
+      &copy; 2026 ModelVista. All rights reserved. Built for iOS and iPadOS.
+    </footer>
+  </div>
+</body>
+</html>
